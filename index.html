@@ -5,28 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJECT MANAGEMENT TOOL</title>
-    <!-- External Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <!-- External Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
-    <!-- Favicon and Apple Touch Icon -->
     <link rel="icon" href="./ic.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-icon.jpeg">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <h1>PROJECT MANAGEM<u>ENT TOOL</u></h1>
     </header>
-    
-    <!-- Main Content -->
     <div class="container-wrapper">
         <div class="card" style="margin: auto">
             <div class="form-group">
@@ -37,18 +30,13 @@
 
             <div class="row" style="margin-bottom: 50px">
                 <div class="col-md-12">
-                    <!-- Form to Delete User -->
                     <form method="POST" onsubmit="return taskObj.deleteProject(this);" style="display: contents">
                         <select name="project" class="form-control" style="display: initial; width: 200px; margin-left: 5px; margin-right: 5px;" id="form-task-hour-calculator-all-projects"></select>
                         <input type="submit" class="btn btn-danger" value="Delete User" />
                     </form>
-
-                    <!-- Button to Add Task Modal -->
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTaskModal" style="background-color: #4caf50; border-color: #4caf50">Add Task</button>
                 </div>
             </div>
-
-            <!-- Task Table -->
             <table class="table">
                 <thead>
                     <tr>
@@ -63,8 +51,6 @@
                 <tbody id="all-tasks"></tbody>
             </table>
         </div>
-
-        <!-- Add Task Modal -->
         <div class="modal fade" id="addTaskModal" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -73,7 +59,6 @@
                         <button class="close" type="button" data-dismiss="modal">x</button>
                     </div>
                     <div class="modal-body">
-                        <!-- Form to Add Task -->
                         <form method="POST" onsubmit="return taskObj.addTask(this);" id="form-task-hour-calculator">
                             <div class="form-group">
                                 <label>User</label>
@@ -92,8 +77,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Add a button for chat support -->
         <div class="chat-support">
             <a href="./chat.html" target="_blank">
                 <img src="https://img.icons8.com/color/48/000000/chat.png"/>

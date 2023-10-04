@@ -181,3 +181,13 @@ body {
 .message_template {
   display: none;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: #cbcbcb;
+  width: 100%;
+}
